@@ -29,12 +29,19 @@ export default function SearchResults({ results }: SearchResultsProps) {
               >
                 <div className="w-full aspect-[2/3] bg-card rounded-lg overflow-hidden border border-border hover:border-primary transition-colors shadow-lg hover:shadow-primary/50">
                   <div className="relative w-full h-full bg-muted">
-                    <img
+                    {show.poster_path ? <img
                       src={getImageUrl(show.poster_path)}
                       alt={show.name}
                       className="w-full h-full object-cover"
                       loading="lazy"
-                    />
+                    /> : <img
+                      src={`/no_image.jpg`}
+                      alt={show.name}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    /> 
+                    }
+                    
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3">
                       <h3 className="text-white font-bold text-sm mb-1 line-clamp-2">
                         {show.name}
