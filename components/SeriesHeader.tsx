@@ -46,13 +46,13 @@ export default function SeriesHeader({ show }: SeriesHeaderProps) {
           </div>
 
           {show.number_of_seasons && (
-            <div className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">
+            <div className="text-white px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">
               {show.number_of_seasons} Season{show.number_of_seasons !== 1 ? 's' : ''}
             </div>
           )}
 
           {show.number_of_episodes && (
-            <div className="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm font-medium">
+            <div className="text-white px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm font-medium">
               {show.number_of_episodes} Episode{show.number_of_episodes !== 1 ? 's' : ''}
             </div>
           )}
