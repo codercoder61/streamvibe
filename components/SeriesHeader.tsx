@@ -26,7 +26,7 @@ export default function SeriesHeader({ show }: SeriesHeaderProps) {
       {/* Series Info */}
       <div className="flex-1 text-foreground">
         <div className="mb-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">{show.name}</h1>
+          <h1 className="text-white text-4xl md:text-5xl font-bold mb-2">{show.name}</h1>
           {show.tagline && (
             <p className="text-lg text-muted-foreground italic">
               &quot;{show.tagline}&quot;
